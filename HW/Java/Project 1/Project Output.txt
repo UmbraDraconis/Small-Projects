@@ -1,0 +1,116 @@
+Added Shampoo to Tom's cart.
+
+Added Toothpaste to Tom's cart.
+
+Added Book to Sally's cart.
+
+Added Laptop to Sally's cart.
+
+Added Printer to Sally's cart.
+
+Added Headphones to Harry's cart.
+
+Video was not found in Ben's cart.
+
+Added Dress to Valerie's cart.
+
+Added Cereal to Jim's cart.
+
+Added Milk to Jim's cart.
+
+Added Shirt to Jim's cart.
+
+Jim views Jim's cart.
+
+   Item Name Item Price
+      Cereal $      5.00
+        Milk $      4.00
+       Shirt $     30.00
+
+Jim checkout Jim's cart.
+
+   Item Name Item Price
+      Cereal $      5.00
+        Milk $      4.00
+       Shirt $     30.00
+
+   SubTotal: $     39.00
+
+Added Video to Ben's cart.
+
+Added Guitar to Ben's cart.
+
+Added Shoes to Sally's cart.
+
+Added Book to Sally's cart.
+
+Added Detergent to Sally's cart.
+
+Sally views Sally's cart.
+
+   Item Name Item Price
+        Book $     15.00
+      Laptop $    500.00
+     Printer $     60.00
+       Shoes $     70.00
+        Book $     15.00
+   Detergent $     10.00
+
+Sally checkout Sally's cart.
+
+   Item Name Item Price
+        Book $     15.00
+      Laptop $    500.00
+     Printer $     60.00
+       Shoes $     70.00
+        Book $     15.00
+   Detergent $     10.00
+
+   SubTotal: $    670.00
+
+Added Vespa to Tom's cart.
+
+Tom views Tom's cart.
+
+   Item Name Item Price
+     Shampoo $      8.00
+  Toothpaste $      5.00
+       Vespa $   1100.00
+
+Added Shampoo to Tom's cart.
+
+Tom checkout Tom's cart.
+
+   Item Name Item Price
+     Shampoo $      8.00
+  Toothpaste $      5.00
+       Vespa $   1100.00
+     Shampoo $      8.00
+
+   SubTotal: $   1121.00
+
+Added Sofa to Gloria's cart.
+
+Added Jeans to Gloria's cart.
+
+Gloria checkout Gloria's cart.
+
+   Item Name Item Price
+        Sofa $    900.00
+       Jeans $     50.00
+
+   SubTotal: $    950.00
+
+Ben views Ben's cart.
+
+   Item Name Item Price
+       Video $     20.00
+      Guitar $    280.00
+
+Ben checkout Ben's cart.
+
+   Item Name Item Price
+       Video $     20.00
+      Guitar $    280.00
+
+   SubTotal: $    300.00

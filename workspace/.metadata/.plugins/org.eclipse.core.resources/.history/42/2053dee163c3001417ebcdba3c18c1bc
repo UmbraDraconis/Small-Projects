@@ -1,0 +1,30 @@
+package guiTest;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class Gui extends Frame implements ActionListener{
+	private JLabel lblCount;
+	
+	public Gui () {
+		setLayout(new FlowLayout());
+		
+		setTitle("Test GUI");
+		setSize(300, 200);
+		setMenuBar(new MenuBar());
+		
+		lblCount = new Label("Counter");
+		add(lblCount);
+		
+		addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});
+		
+		setVisible(true);
+	}
+	public static void main(String[] args) {
+		Gui g = new Gui();
+	}
+}

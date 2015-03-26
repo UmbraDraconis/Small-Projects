@@ -1,0 +1,13 @@
+Simon Lam
+Professor Srinivas
+CS 241
+
+	This project asks us to develop an program to classify the edges of a directed graph. We would use the program several times to read variously different graph files. The program would take in a single graph file input, construct a graph, display the adjaceny list, and display the classification of each edges as either tree edge, back edge, forward edge, or cr\oss edge.
+
+	I create the Depth-First Search Graph at the beginning with the file name that will be used to create the structure of the graph. With the given graph classes, I display the adjaceny list first. Then I implemented two different methods called doMarked and doUnmarked to display and decide which edge would be classified as. The data structure used in these methods is the ArrayList that would contain the list of ancestors of a particular vertex. This algorithm is used also in my own DfsGraph. Initially I use the enhanced-for loop to make sure that every single vertex has become marked. Also, the dfs method is recursive so that we can see all the neighbor vertex is marked before heading back to the preVertex.
+
+	The structure of the code consists of several classes:  Graph, DfsGraph, Edge, Vertex, ExtendedDfsGraph,  MyDfsGraph, and Main. The first three classes were provided by the Professor. However, the last three were programmed by me. The ExtendedDfsGraph consists of an overloaded doMarked method and doUnmarked method. These methods will display the correct classification of each existing edge in the graph. The MyDfsGraph is my own version of the DfsGraph with similar doMarked and doUnmarked method but a different version of a dfs implementation. The Main class is the class where the main method is located. All of my classes have the packages java.io.IOException imported to be used.
+
+	I hand-traced my program to make sure that the program is working enough to my knowledge. Then I took the sample output the professor gave us and compared it to my graph output for Graph3. Next I hand-analyzed the other two graphs to make sure I have the same results as when I would run the program.
+
+	I learn how to use graphs and the extent of using graphs. I learned how to make a set of ancestors to see whether a single vertex has a specific ancestor. I also learned how the DFS method is actually used.

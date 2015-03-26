@@ -1,0 +1,175 @@
+package conversion;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class GUI implements ActionListener {
+
+	private JFrame frame;
+	private JMenuBar menuBar;
+	private JMenu menu;
+	private JLabel baseLbl, floatLbl, decLbl, binLbl, octLbl, hexLbl, singLbl, doubLbl;	
+	private JButton convertBtn, clearBtn;
+	private JTextField decTField, binTField, octTField, hexTField, singTField, doubTField;
+	
+	public GUI () {
+		frame = new JFrame();
+		
+		frame.setLayout(new GridLayout(5,1));
+		frame.setSize(new Dimension(400, 700));
+		//frame.setMaximizedBounds(new Rectangle(400, 700));
+		frame.setResizable(false);
+		frame.setTitle("Binary Number Conversion");
+		frame.setLocation(0, 0);
+		
+		create();
+		
+		frame.setVisible(true);
+	}
+	
+	private void create() {
+		createMenu();
+		createBtn();
+		createLbl();
+		createTField();
+		createPanel();
+	}
+	
+	private void createPanel() {
+		JPanel baseLblPane = new JPanel();
+		JPanel floatLblPane = new JPanel();
+		
+		JPanel btnPane = new JPanel();
+		JPanel baseOutPane = new JPanel();
+		JPanel floatOutPane = new JPanel();
+		
+		JPanel decPane = new JPanel();
+		JPanel binPane = new JPanel();
+		JPanel octPane = new JPanel();
+		JPanel hexPane = new JPanel();
+		JPanel singPane = new JPanel();
+		JPanel doubPane = new JPanel();
+		
+		baseOutPane.setLayout(new BoxLayout(baseOutPane, BoxLayout.PAGE_AXIS));
+		floatOutPane.setLayout(new BoxLayout(floatOutPane, BoxLayout.PAGE_AXIS));
+		decPane.setLayout(new BoxLayout(decPane, BoxLayout.LINE_AXIS));
+		binPane.setLayout(new BoxLayout(binPane, BoxLayout.LINE_AXIS));
+		octPane.setLayout(new BoxLayout(octPane, BoxLayout.LINE_AXIS));
+		hexPane.setLayout(new BoxLayout(hexPane, BoxLayout.LINE_AXIS));
+		singPane.setLayout(new BoxLayout(singPane, BoxLayout.LINE_AXIS));
+		doubPane.setLayout(new BoxLayout(doubPane, BoxLayout.LINE_AXIS));
+		btnPane.setLayout(new BoxLayout(btnPane, BoxLayout.LINE_AXIS));
+		
+		baseOutPane.setSize(new Dimension(400,200));
+		
+		decPane.add(decLbl);
+		decPane.add(Box.createRigidArea(new Dimension(10,0)));
+		decPane.add(decTField);
+		
+		binPane.add(binLbl);
+		binPane.add(Box.createRigidArea(new Dimension(10,0)));
+		binPane.add(binTField);
+		
+		octPane.add(octLbl);
+		octPane.add(Box.createRigidArea(new Dimension(10,0)));
+		octPane.add(octTField);
+		
+		hexPane.add(hexLbl);
+		hexPane.add(Box.createRigidArea(new Dimension(10,0)));
+		hexPane.add(hexTField);
+		
+		singPane.add(singLbl);
+		singPane.add(Box.createRigidArea(new Dimension(10,0)));
+		singPane.add(singTField);
+		
+		doubPane.add(doubLbl);
+		doubPane.add(Box.createRigidArea(new Dimension(10,0)));
+		doubPane.add(doubTField);
+		
+		baseOutPane.add(decPane);
+		baseOutPane.add(Box.createRigidArea(new Dimension(0,10)));
+		baseOutPane.add(binPane);
+		baseOutPane.add(Box.createRigidArea(new Dimension(0,10)));
+		baseOutPane.add(octPane);
+		baseOutPane.add(Box.createRigidArea(new Dimension(0,10)));
+		baseOutPane.add(hexPane);
+		
+		floatOutPane.add(singPane);
+		floatOutPane.add(Box.createRigidArea(new Dimension(0,10)));
+		floatOutPane.add(doubPane);
+		
+		baseLblPane.setLayout(new FlowLayout());
+		baseLblPane.add(baseLbl);
+		
+		floatLblPane.add(floatLbl);
+		
+		btnPane.add(convertBtn);
+		btnPane.add(Box.createRigidArea(new Dimension(30,0)));
+		btnPane.add(clearBtn);
+		
+		//frame.add(baseLblPane);
+		frame.add(baseOutPane);
+		//frame.add(floatLblPane);
+		frame.add(floatOutPane);
+		frame.add(btnPane);
+	}
+	
+	private void createLbl() {
+		baseLbl = new JLabel("Base Number Conversion");
+		baseLbl.setFont(new Font("Consolas", Font.PLAIN, 18));
+		
+		floatLbl = new JLabel("Floating Point Conversion");
+		floatLbl.setFont(new Font("Consolas", Font.PLAIN, 18));
+		
+		decLbl = new JLabel("Decimal Value:");
+		binLbl = new JLabel("Binary Value:");
+		octLbl = new JLabel("Octal Value:");
+		hexLbl = new JLabel("Hexadecimal Value:");
+		singLbl = new JLabel("Single Floating Point Value:");
+		doubLbl = new JLabel("Double Floating Point Value:");
+	}
+	
+	private void createBtn() {
+		convertBtn = new JButton("Convert");
+		convertBtn.setActionCommand("Convert");
+		convertBtn.addActionListener(this);
+		
+		clearBtn = new JButton("Clear All");
+		clearBtn.setActionCommand("Clear All");
+		clearBtn.addActionListener(this);
+	}
+	
+	private void createMenu() {
+		menuBar = new JMenuBar();
+		menu = new JMenu("File");
+		menuBar.add(menu);
+		menuBar.setVisible(true);
+		frame.setJMenuBar(menuBar);
+	}
+	
+	private void createTField() {
+		decTField = new JTextField();
+		binTField = new JTextField();
+		octTField = new JTextField();
+		hexTField = new JTextField();
+		singTField = new JTextField();
+		doubTField = new JTextField();
+		
+		decTField.setEditable(true);
+		binTField.setEditable(true);
+		octTField.setEditable(true);
+		hexTField.setEditable(true);
+		singTField.setEditable(true);
+		doubTField.setEditable(true);
+		
+	}
+	
+	public void actionPerformed(ActionEvent e) {
+		if("Convert".equals(e.getActionCommand())) {
+			
+		} else if ("Clear All".equals(e.getActionCommand())) {
+			
+		}
+	}
+}
